@@ -19,96 +19,125 @@
 
     <body>
         
-        <h1>My Goals</h1>
+        <header>
+       
+            <h1>My Goals</h1>
+
+            <nav aria-label="primary-navigation">
+                <ul>
+                    <li>
+                        <a href="#html">Learn HTML</a>
+                    </li>
+                    <li>
+                        <a href="#plans">My Plans</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
 
         <hr>
 
-        <nav>
-            <ul>
-                <li>
-                    <a href="#html">Learn HTML</a>
-                </li>
-                <li>
-                    <a href="#plans">My Plans</a>
-                </li>
-            </ul>
-        </nav>
+        <main>
+            <section id="html">
+
+                <h2><em>I'm ready to learn HTML.</em></h2>
+
+                <p>This is my first Webpage.</p>
+                
+                <img src="img/html_200dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="HTML5 Logo" title="I'm learning HTML5" width="250" height="200">
+
+                <figure>
+                    <figcaption>Example of HTML5 Code</figcaption>
+                    <p>
+                        <code>&lt;h1&gt; Hello World! &lt;/h1&gt;</code>
+                    </p>
+                </figure>
+
+            </section>
+
+            <hr>
+            <article id="Roadmap">
+                <h2><em>This is my Roadmap!</em></h2>
+                <section>
+
+                    <h3><em>My Daily Schedule. <img src="img/integration_instructions_200dp_E8EAED_FILL0_wght400_GRAD0_opsz48.png" alt="Instruction Logo" width="30" height="30"></em></h3>
+
+                    <p>Let me show you how:</p>
+
+                        <ol>
+
+                            <li> 
+                                I learn more about developing a website.
+                            </li>
+                            <li> 
+                                I plan out my Schedule.
+                            </li>
+                            <li> 
+                                I use resources from <abbr title="Mozilla Developer Network">
+                                <a href="https://developer.mozilla.org/en-US/">MDN</a>
+                            </abbr> and <a href="https://www.w3schools.in/html">W3School</a>.
+                            </li>
+
+                        </ol>
+
+                    <aside>
+                        <details>
+                            <summary>
+                                Guess the number of hours I put into this per day!
+                            </summary>
+                            <p>
+                                I put an average of 4 hours per day!
+                            </p>
+                        </details>
+                    </aside>
+                </section>
+
+                <section id="plans">
+
+                    <h3><em>My plans. <img src="img/check_box_200dp_E8EAED_FILL0_wght400_GRAD0_opsz48.png" alt="Plans Logo" width="30" height="30"></em></h3>
+
+                    <p>I have been:</p>
+
+                        <ul>
+
+                            <li> 
+                                Playing around with Obsidian and found an urge to learn HTML and CSS to decorate it.
+                            </li>
+                            <li> 
+                                Trying so learn Visualization through the Web with Jupyter Notebook.
+                            </li>
+
+                        </ul>
+
+                    <h3><em>Targets that I wanted to complete.</em></h3>
+
+                        <dl> 
+
+                            <dt>Build a platform where I can display my project.</dt>
+                            <dd>This is top priority.</dd>
+
+                            <dt>Host my own resume website.</dt>
+                            <dd>This is crucial for learning and networking.</dd>
+
+                        </dl>
+                    
+                    <!-- TODO: Add more places-->
+                </section>
+            </article>
+        </main>
 
         <hr>
 
-        <section id="html">
+        <footer>
+            <p>
+                &lt;&lt;&lt; &copy; <a href="about.html">Sparrowium</a> &gt;&gt;&gt;
+            </p>
 
-        <h2><em>I'm ready to learn HTML.</em></h2>
-
-        <p>This is my first Webpage.</p>        
-        
-        </section>
-
-        <hr>
-
-        <section>
-
-        <h2><em>My Daily Schedule.</em></h2>
-
-        <p>Let me show you how:</p>
-
-            <ol>
-
-            <li> 
-                I learn more about developing a website.
-            </li>
-            <li> 
-                I plan out my Schedule.
-            </li>
-            <li> 
-                I use resources from <abbr title="Mozilla Developer Network">
-                <a href="https://developer.mozilla.org/en-US/">MDN</a>
-            </abbr> and <a href="https://www.w3schools.in/html">W3School</a>.
-            </li>
-
-        </ol>
-        
-        </section>
-
-        <hr>
-
-        <section id="plans">
-
-        <h2><em>My plans.</em></h2>
-
-        <p>I have been:</p>
-
-            <ul>
-
-            <li> 
-                Playing around with Obsidian and found an urge to learn HTML and CSS to decorate it.
-            </li>
-            <li> 
-                Trying so learn Visualization through the Web with Jupyter Notebook.
-            </li>
-
-        </ul>
-
-        <h3><em>Targets that I wanted to complete.</em></h3>
-
-        <dl> 
-
-            <dt>Build a platform where I can display my project.</dt>
-            <dd>This is top priority.</dd>
-
-            <dt>Host my own resume website.</dt>
-            <dd>This is crucial for learning and networking.</dd>
-
-        </dl>
-        
-        <!-- TODO: Add more places-->
-        </section>
-        <hr>
-        &lt;&lt;&lt; &copy; <a href="about.html">Sparrowium</a> &gt;&gt;&gt;
-
-        <p>
-            <a href="#">Back to Top</a>
-        </p>
+            <p>
+                <a href="#">Back to Top</a>
+            </p>
+        </footer>
     </body>
 
 </html>
