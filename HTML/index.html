@@ -172,36 +172,103 @@
                     I'd really like to hear from you!
                 </p>
                 <form action="https://httpbin.org/get" method="get">
-                    <p>
-                        <label for="firstName">
-                            First Name:
-                        </label>
-                        <input type="text" name="firstName" id="firstName" placeholder="Enter here" autocomplete="on" required autofocus>
-                    </p>
-                    <p>
-                        <label for="lastName">
-                            Last Name:
-                        </label>
-                        <input type="text" name="lastName" id="lastName" placeholder="Enter here" autocomplete="on" required autofocus>
-                    </p>
-                        <label for="password">
-                            First Name:
-                        </label>
-                        <input type="text" name="password" id="password" placeholder="Enter here" required autofocus>
-                    </p>
-                    </p>
-                        <label for="number">
-                            Phone:
-                        </label>
-                        <input type="tel" name="phone" id="phone" placeholder="###-###-#####" required autofocus>
-                    </p>
-                    <p>
-                        <label for="coffee">
-                            Coffee:
-                        </label>
-                        <select name="coffee" id="coffee"></select>
-                    </p>
-                </form>
+                    <fieldset>
+                        <legend>Personal Info</legend>
+                        <p>
+                            <label for="firstName">
+                                First Name:
+                            </label>
+                            <input type="text" name="firstName" id="firstName" placeholder="Enter here" autocomplete="on" required autofocus>
+                        </p>
+                        <p>
+                            <label for="lastName">
+                                Last Name:
+                            </label>
+                            <input type="text" name="lastName" id="lastName" placeholder="Enter here" autocomplete="on" required>
+                        </p>
+                        <p>
+                            <label for="password">
+                                Password:
+                            </label>
+                            <input type="password" name="password" id="password" placeholder="Enter here" required>
+                        </p>
+                        <p>
+                            <label for="phone">
+                                Phone:
+                            </label>
+                            <input type="tel" name="phone" id="phone" placeholder="###-###-#####" required>
+                        </p>
+                        <p>
+                            <label for="coffee">
+                                Favorite Coffee:
+                            </label>
+                            <select name="coffee" id="coffee">
+                                <optgroup label="Coffee">
+                                    <option value="regular coffee" selected>Regular Coffee</option>
+                                    <option value="iced coffee">Iced Coffee</option>
+                                </optgroup>
+                                <optgroup label="Espresso Drinks">
+                                    <option value="cappuccino">Cappuccino</option>
+                                    <option value="latte">Latte</option>
+                                </optgroup>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="cat">
+                                Favorite Cat:
+                            </label>
+                            <input type="text" name="cat" id="cat" list="cat-list">
+                            <datalist id="cat-list">
+                                <option value="Tabby Cat"></option>
+                                <option value="Norwegian FOrest Cat"></option>
+                                <option value="Turkish Van Cat"></option>
+                                <option value="Cheetoh Cat"></option>
+                            </datalist>
+                        </p>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>What is your favorite food?</legend>
+                        <p>
+                            <input type="radio" name="food" id="tacos" value="tacos">
+                            <label for="tacos">Tacos</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="food" id="pizza" value="pizza">
+                            <label for="pizza">Pizza</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="food" id="burger" value="burger">
+                            <label for="burger">Burger</label>
+                        </p>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Do you have vehicle?</legend>
+                        <p>
+                            <input type="checkbox" name="cars" id="toyota" value="toyota">
+                            <label for="toyota">Toyota</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="cars" id="acura" value="acura">
+                            <label for="acura">Acura</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="cars" id="bmw" value="bmw">
+                            <label for="bmw">BMW</label>
+                        </p>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Send me a note</legend>
+                        <label for="message">Your Message:</label>
+                        <br>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here"></textarea>
+                    </fieldset>
+                    <br>
+                    <button type="submit">Submit</button>
+                    <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                    <button type="reset">Reset</button>
                 </form>
             </article>
         </main>
