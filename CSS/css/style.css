@@ -1,5 +1,9 @@
 /* General Document styling */
 /* Element CSS */
+* {
+    box-sizing: border-box;
+}
+
 html {
     background-color: #333;
     font-size: 22px;
@@ -36,6 +40,18 @@ p {
     background-color: rgb(240, 198, 116, 0.75);
 }
 
+.container {
+    padding: 1.5em;
+    margin: 1.5em;
+}
+
+.circle {
+    background-color: gold;
+    width: 50px; 
+    height: 50px;
+    border: 2px solid;
+    border-radius: 25px;
+}
 /* ID CSS */
 #poem {
     font-style: italic;
@@ -54,12 +70,15 @@ a:visited {
 h2 {
     color: #4CC9F0;
     border: 1px dashed #F1FFE7;
+    font-size: 2rem;
     padding: 2em;
+    width: 200%;
 }
 h3 {
     color: whitesmoke;
-    width: 50%;
-    background-color: skyblue;
+    width: 300px;
+    outline: 2px solid #6290C3;
+    outline-offset: 10px;
 }
 
 /* CSS Listing styling */
