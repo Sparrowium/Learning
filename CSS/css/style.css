@@ -1,28 +1,42 @@
 /* General Document styling */
+/* Element CSS */
 html {
     background-color: #333;
     font-size: 22px;
 }
 
-body {
+header {
+    width: 40% ;
 
+}
+
+body {
+    
 }
 
 main {
     font-family: monospace;
 }
-p {
-    color: whitesmoke;
+
+hr {
+    border: 1px dashed;
 }
 
+p {
+    color: rgb(255, 239, 213, 0.8);
+
+}
+
+/* Class CSS */
 .gray {
     color: gray;
 }
 
 .highlight {
-    background-color: rgb(240, 198, 116);
+    background-color: rgb(240, 198, 116, 0.75);
 }
 
+/* ID CSS */
 #poem {
     font-style: italic;
 }
@@ -33,15 +47,19 @@ a:hover, a:active {
 }
 
 a:visited {
-    color: lightblue;
+    color: papayawhip;
 }
 
 /* CSS heading style */
 h2 {
-    color: aqua;
+    color: #4CC9F0;
+    border: 1px dashed #F1FFE7;
+    padding: 2em;
 }
 h3 {
     color: whitesmoke;
+    width: 50%;
+    background-color: skyblue;
 }
 
 /* CSS Listing styling */
