@@ -1,4 +1,54 @@
+/* General Document styling */
+html {
+    background-color: #333;
+    font-size: 22px;
+}
+
+body {
+
+}
+
+main {
+    font-family: monospace;
+}
 p {
-    font-size: 64px;
-    color: blueviolet;
+    color: whitesmoke;
+}
+
+.gray {
+    color: gray;
+}
+
+.highlight {
+    background-color: rgb(240, 198, 116);
+}
+
+#poem {
+    font-style: italic;
+}
+
+/* CSS action style */
+a:hover, a:active {
+    color: #eee;
+}
+
+a:visited {
+    color: lightblue;
+}
+
+/* CSS heading style */
+h2 {
+    color: aqua;
+}
+h3 {
+    color: whitesmoke;
+}
+
+/* CSS Listing styling */
+::-moz-list-bullet {
+    color: #78F2F0;
+}
+
+ul li, ol li {
+    color: whitesmoke;
 }
