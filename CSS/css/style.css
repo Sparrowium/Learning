@@ -10,12 +10,12 @@ html {
 }
 
 header {
-    width: 40% ;
+    width: 50% ;
 
 }
 
 body {
-    
+    padding-left: 15%;
 }
 
 main {
@@ -28,6 +28,7 @@ hr {
 
 p {
     color: rgb(255, 239, 213, 0.8);
+    line-height: 1.5;
 
 }
 
@@ -45,13 +46,7 @@ p {
     margin: 1.5em;
 }
 
-.circle {
-    background-color: gold;
-    width: 50px; 
-    height: 50px;
-    border: 2px solid;
-    border-radius: 25px;
-}
+
 /* ID CSS */
 #poem {
     font-style: italic;
@@ -89,4 +84,103 @@ h3 {
 ul li, ol li {
     color: whitesmoke;
     
+}
+
+/* CSS Interaction */
+input, button {
+    color: whitesmoke;
+}
+
+/* Chapter 3 Color */
+/*
+
+body {
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.5;
+    background: papayawhip;
+    color: papayawhip;
+}
+
+*/
+
+/* Chapter 4 Unit & Sizing */
+
+/*
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+}
+
+h1 {
+    border: 2px dashed red;
+    width: 50%;
+    font-size: 3rem;
+    padding: 0.5em;
+}
+
+main {
+    font-size: 2rem;
+}
+
+*/
+
+/* Chapter 5 Box Model */
+/* 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border: dashed red;
+    border-top: 5px solid;
+    border-right: 10px solid green;
+    border-bottom: 1.5rem;
+    border-left: 2rem;
+    margin-top: 2em;
+    margin-bottom: 4em;
+    margin-left: 3em;
+    margin-right: 2em;
+    padding: 2em;
+}
+
+.circle {
+    background-color: gold;
+    width: 50px; 
+    height: 50px;
+    border: 2px solid;
+    border-radius: 25px;
+} 
+
+*/
+
+/* Chapter 6 Typography */
+
+body {
+    padding: 5%;
+    font-size: 1rem;
+}
+
+input, button {
+    color: inherit;
+}
+
+p {
+    text-transform: none; 
+    text-decoration: underline;
+    text-align: justify;
+    text-indent: 2em;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    word-spacing: 0.5em;
+    font-weight: normal;
+    font-family: 'Courier New', Courier, monospace;
 }
