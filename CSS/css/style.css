@@ -15,7 +15,7 @@ header {
 }
 
 body {
-    padding-left: 15%;
+    padding-left: 5%;
 }
 
 main {
@@ -87,7 +87,7 @@ ul li, ol li {
 }
 
 /* CSS Interaction */
-input, button {
+form label {
     color: whitesmoke;
 }
 
@@ -188,3 +188,33 @@ p {
 
 */
 
+/* Chapter 7 Styling Link */
+/*
+
+body {
+    padding: 5%;
+    font-size: 2rem;
+    font-family: monospace;
+
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: cyan;
+}
+
+a:visited {
+    color: cyan;
+}
+
+a:hover, a:focus {
+    color: #6290C3;
+    opacity: 0.75;
+}
+
+a:active {
+    color: cadetblue;
+}
+
+*/
