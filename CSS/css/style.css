@@ -9,13 +9,9 @@ html {
     font-size: 22px;
 }
 
-header {
-    width: 50% ;
-
-}
-
 body {
     padding-left: 5%;
+    padding-right: 5%;
 }
 
 main {
@@ -29,23 +25,18 @@ hr {
 p {
     color: rgb(255, 239, 213, 0.8);
     line-height: 1.5;
-
 }
 
 /* Class CSS */
-.gray {
-    color: gray;
-}
-
 .highlight {
     background-color: rgb(240, 198, 116, 0.75);
 }
 
 .container {
-    padding: 1.5em;
-    margin: 1.5em;
+    border: 1px solid red;
+    height: 1000px; /* Adjust as needed */
+    width: 100%; /* Adjust as needed */
 }
-
 
 /* ID CSS */
 #poem {
@@ -64,16 +55,11 @@ a:visited {
 /* CSS heading style */
 h2 {
     color: #4CC9F0;
-    border: 1px dashed #F1FFE7;
     font-size: 2rem;
-    padding: 2em;
-    width: 200%;
 }
+
 h3 {
     color: whitesmoke;
-    width: 300px;
-    outline: 2px solid #6290C3;
-    outline-offset: 10px;
 }
 
 /* CSS Listing styling */
@@ -81,14 +67,33 @@ h3 {
     color: #78F2F0;
 }
 
-ul li, ol li {
+ul, ol{
     color: whitesmoke;
-    
+    display: inline-flex;
+    flex-direction: column; /* Vertical stacking of items */
+    flex-wrap: wrap; /* Wrap items into columns */
+    height: 100%; /* Ensure it fills the container height */
+    margin: 0;
 }
 
-/* CSS Interaction */
-form label {
-    color: whitesmoke;
+/* List item styling */
+li {
+    flex: 1 1 auto; /* Allow flexible spacing */
+    margin: 5px 0; /* Add spacing between items */
+}
+
+/* Nested lists styling */
+li > ul {
+    display: flex;
+    flex-direction: column; /* Vertical stacking for nested items */
+    flex-wrap: wrap; /* Wrap nested items into columns */
+    height: auto; /* Allow nested lists to adapt to content */
+    margin-left: 20px; /* Indent nested lists */
+}
+
+/* Inner list items */
+li > ul > li {
+    flex: 1 1 auto; /* Flexible spacing for inner content */
 }
 
 /* Chapter 3 Color */
@@ -220,8 +225,9 @@ a:active {
 */
 
 /* Chapter 8 Listing Styling */
+/* 
 
-/* ol {
+ol {
     list-style-type: decimal;
 }
 
@@ -233,7 +239,7 @@ ul {
     line-height: normal;
     list-style-image: url('../images/check_circle.png');
     list-style: square;
-} */
+}
 
 ul li:nth-child(even) {
     color: #6290C3;
@@ -243,4 +249,9 @@ ul li:nth-child(even) {
     color: antiquewhite;
     font-size: 1.5em;
     content: "Featured in most car";
-}
+} 
+
+*/
+
+/* Chapter 9 Display */
+
