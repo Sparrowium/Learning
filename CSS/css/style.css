@@ -32,6 +32,10 @@ p {
     background-color: rgb(240, 198, 116, 0.75);
 }
 
+.magnifier {
+    font-size: large;
+}
+
 .container {
     border: 1px solid red;
     height: 1000px; /* Adjust as needed */
